@@ -1,0 +1,12 @@
+[package]
+name = "k8s_test_client"
+version = "0.1.0"
+authors = ["Nico Just <mail@njust.de>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+stream-cancel = "0.6.1"
+k8s_client = {git = "https://github.com/njust/k8s_client.git"}
+tokio = { version = "0.2", features = ["full"] }
